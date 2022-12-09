@@ -9,8 +9,15 @@
 </head>
 
 <body>
-    <form action="">
-        <input type="text" />
+    <form action="https://handlers.education.launchcode.org/request-parrot" method="post">
+        <label for="username">Username <input type="text" name="username" /></label><br>
+        <label for="password">Password <input type="password" name="password" /></label><br>
+        <label for="email">Email <input type="email" name="email" /></label><br>
+        How would you like to verify your information?<br>
+        <label>By email <input type="radio" name="verification" value="byEmail" checked></label><br>
+        <label>By phone <input type="radio" name="verification" value="byPhone"></label><br>
+        <label>By text <input type="radio" name="verification" value="byText"></label><br>
+        <input type="submit" value="Log in">
     </form>
 </body>
 
